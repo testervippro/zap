@@ -1,3 +1,6 @@
+
+
+```yaml
 env:                                   # The environment, mandatory
   contexts :                           # List of 1 or more contexts, mandatory
     - name: context 1                  # Name to refer to this context, mandatory
@@ -79,3 +82,13 @@ env:                                   # The environment, mandatory
     realm: proxyRealm                  # Proxy realm if using HTTP auth
     username: proxyUser                # Proxy username
     password: proxyPass                # Proxy password
+```
+
+---
+
+### ✅ Notes:
+
+* Make sure to **escape any special regex characters** in `includePaths`, `excludePaths`, and `regex` fields.
+* `scriptEngine` typically supports values like `ECMAScript`, `Python`, `Groovy`, depending on your ZAP installation.
+* This format is compatible with **OWASP ZAP Automation Framework YAML config files**.
+
